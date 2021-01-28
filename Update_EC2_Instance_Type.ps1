@@ -1,5 +1,5 @@
 ﻿# Specify the profile name
-Set-AWSCredential -ProfileName WEG-NONLIVE-Admin
+Set-AWSCredential -ProfileName <PROFILE_NAME>
 
 # Create the empty array of instance ids
 $instanceIdArray = [System.Collections.ArrayList]::new()
