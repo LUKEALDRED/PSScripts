@@ -1,0 +1,1 @@
+$vmName = ''; while ($vmName -ne 'no') { $vmName = Read-Host -Prompt "Enter a VM name, otherwise enter no"; if ($vmName -ne 'no') {$rgName = Read-Host -Prompt "Enter resource group name"; $vmName | ForEach-Object { Invoke-AzVMRunCommand -ResourceGroupName $rgName -VMName $vmName -CommandId 'RunPowerShellScript' -ScriptPath 'sample.ps1'}}}
